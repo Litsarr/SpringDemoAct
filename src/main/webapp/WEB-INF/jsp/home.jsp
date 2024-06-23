@@ -6,12 +6,10 @@
 <body>
     <h2>Welcome, <%= session.getAttribute("username") %>!</h2>
 
-    <!-- Button to navigate to quizpage.jsp -->
     <form action="${pageContext.request.contextPath}/quizpage">
         <input type="submit" value="Quiz Page">
     </form>
 
-    <!-- Button to navigate to results.jsp -->
     <form action="${pageContext.request.contextPath}/results">
         <input type="submit" value="Results">
     </form>
