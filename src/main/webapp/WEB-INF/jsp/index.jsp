@@ -15,6 +15,11 @@
     </tr>
     </thead>
     <tbody>
+    <form action="/" method="get">
+        <label>Name:</label>
+        <input type="text" name="name" />
+        <button type="submit">Search</button>
+    </form>
     <c:forEach var="employee" items="${listEmployees}">
         <tr>
             <td>${employee.name}</td>

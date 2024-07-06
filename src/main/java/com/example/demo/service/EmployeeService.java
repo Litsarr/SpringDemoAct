@@ -2,7 +2,6 @@ package com.example.demo.service;
 
 import com.example.demo.model.Employee;
 import com.example.demo.repository.EmployeeRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,6 +16,10 @@ public class EmployeeService {
 
     public List<Employee> getAllEmployees() {
         return repository.findAll();
+    }
+
+    public List<Employee> getAllEmployeesByName(String name) {
+        return repository.findByName(name);
     }
 
     public void saveEmployee(Employee employee) {

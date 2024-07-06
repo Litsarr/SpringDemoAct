@@ -7,4 +7,7 @@ import java.util.List;
 
 public interface EmployeeRepository extends JpaRepository<Employee, Long> {
     List<Employee> findByRole(String role);
+
+    //@Query("select * from employee")
+    List<Employee> findByName(String name);
 }
