@@ -20,6 +20,9 @@
         <input type="text" name="name" />
         <button type="submit">Search</button>
     </form>
+    <form action="/" method="get">
+        <button type="submit">Refresh</button>
+    </form>
     <c:forEach var="employee" items="${listEmployees}">
         <tr>
             <td>${employee.name}</td>
